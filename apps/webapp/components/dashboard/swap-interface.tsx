@@ -53,13 +53,13 @@ export default function SwapInterface({
           From
         </label>
         <div className="bg-gray-50 rounded-lg p-4">
-          <div className="flex items-center justify-between mb-2">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-2">
             <input
               type="number"
               placeholder="0.0"
               value={fromAmount}
               onChange={(e) => setFromAmount(e.target.value)}
-              className="bg-transparent text-2xl font-semibold text-gray-900 placeholder-gray-400 border-none outline-none flex-1"
+              className="bg-transparent text-xl sm:text-2xl font-semibold text-gray-900 placeholder-gray-400 border-none outline-none flex-1 min-w-0"
               aria-label="Amount to swap from"
             />
             <select
@@ -68,7 +68,7 @@ export default function SwapInterface({
                 const token = tokens.find((t) => t.symbol === e.target.value);
                 if (token) setFromToken(token);
               }}
-              className="bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm font-medium text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm font-medium text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent w-full sm:w-auto sm:min-w-[120px]"
               aria-label="Select token to swap from"
             >
               {tokens.map((token) => (
@@ -110,13 +110,13 @@ export default function SwapInterface({
           To
         </label>
         <div className="bg-gray-50 rounded-lg p-4">
-          <div className="flex items-center justify-between mb-2">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-2">
             <input
               type="number"
               placeholder="0.00"
               value={toAmount}
               onChange={(e) => setToAmount(e.target.value)}
-              className="bg-transparent text-2xl font-semibold text-gray-900 placeholder-gray-400 border-none outline-none flex-1"
+              className="bg-transparent text-xl sm:text-2xl font-semibold text-gray-900 placeholder-gray-400 border-none outline-none flex-1 min-w-0"
               aria-label="Amount to receive"
             />
             <select
@@ -125,7 +125,7 @@ export default function SwapInterface({
                 const token = tokens.find((t) => t.symbol === e.target.value);
                 if (token) setToToken(token);
               }}
-              className="bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm font-medium text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="bg-white border border-gray-200 rounded-lg px-3 py-2 text-sm font-medium text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent w-full sm:w-auto sm:min-w-[120px]"
               aria-label="Select token to receive"
             >
               {tokens.map((token) => (
