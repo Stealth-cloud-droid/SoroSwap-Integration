@@ -45,11 +45,11 @@ export default function DefiInterface() {
                 <TabsTrigger
                   key={tab.id}
                   value={tab.id}
-                  className="data-[state=active]:bg-white data-[state=active]:text-black data-[state=inactive]:text-gray-500 data-[state=inactive]:hover:text-gray-700"
+                  className="data-[state=active]:bg-white data-[state=active]:text-black data-[state=inactive]:text-gray-500 data-[state=inactive]:hover:text-gray-700 px-2 py-2 sm:px-3 sm:py-2"
                 >
-                  <span className="flex items-center justify-center gap-2">
-                    <IconComponent className="w-4 h-4" />
-                    {tab.label}
+                  <span className="flex items-center justify-center gap-1 sm:gap-2">
+                    <IconComponent className="w-3 h-3 sm:w-4 sm:h-4" />
+                    <span className="text-xs sm:text-sm font-medium">{tab.label}</span>
                   </span>
                 </TabsTrigger>
               );
