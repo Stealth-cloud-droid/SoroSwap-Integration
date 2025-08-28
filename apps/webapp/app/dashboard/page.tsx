@@ -1,6 +1,7 @@
 import QuickActions, {
   type QuickAction,
 } from "@/components/dashboard/quick-actions";
+import DeFiInterface from "@/components/dashboard/defi-interface";
 
 export default function Dashboard() {
   const actions: QuickAction[] = [
@@ -29,10 +30,13 @@ export default function Dashboard() {
   ];
 
   return (
-    <div className="min-h-screen p-8">
-      <div className="w-full flex justify-center">
-        <QuickActions actions={actions} />
+    <main className="min-h-screen p-8">
+      <div className="w-full flex justify-center mb-8">
+        {/* <QuickActions actions={actions} /> */}
       </div>
-    </div>
+      <div className="w-full max-w-4xl mx-auto">
+        <DeFiInterface />
+      </div>
+    </main>
   );
 }
