@@ -49,7 +49,9 @@ export default function DefiInterface() {
                 >
                   <span className="flex items-center justify-center gap-1 sm:gap-2">
                     <IconComponent className="w-3 h-3 sm:w-4 sm:h-4" />
-                    <span className="text-xs sm:text-sm font-medium">{tab.label}</span>
+                    <span className="text-xs sm:text-sm font-medium">
+                      {tab.label}
+                    </span>
                   </span>
                 </TabsTrigger>
               );
