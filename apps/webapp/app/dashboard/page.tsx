@@ -1,3 +1,4 @@
+import DashboardNav from "@/components/ui/DashboardNav";
 import QuickActions, {
   type QuickAction,
 } from "@/components/dashboard/quick-actions";
@@ -30,6 +31,10 @@ export default function Dashboard() {
   ];
 
   return (
+    <div className="">
+      <DashboardNav />
+      <div className="max-w-6xl mx-auto pt-10">
+        <p className=" text-2xl">Dashboard </p>
     <main className="min-h-screen p-8">
       <div className="w-full flex justify-center mb-8">
         {/* <QuickActions actions={actions} /> */}
