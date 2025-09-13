@@ -1,2 +1,2 @@
-// Blend Template - Root entry point
-export * from './apps/webapp/lib/utils'
+// Blend Template - Root ecdntry point
+export * from "./apps/webapp/lib/utils";
